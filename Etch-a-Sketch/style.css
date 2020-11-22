@@ -1,0 +1,38 @@
+
+body {
+    appearance: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+
+}
+
+#container {
+    border: 8px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    margin:auto;
+    grid-template-columns: repeat(var(--col), 1fr);
+    grid-template-rows: repeat(var(--row), 1fr);
+}
+
+ .cell {
+    /* display:flex;
+    flex-wrap: wrap; */
+    padding: 3px;
+    border: 1px solid lightgoldenrodyellow;
+    min-height: 1px;
+}
+
+button {
+    margin: 20px;
+    height: 40px;
+}
+
+#gridSize {
+    display: inline-block;
+    margin: 20px
+}
+
